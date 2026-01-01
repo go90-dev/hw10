@@ -1,0 +1,10 @@
+1> c(code_lock).
+{ok,code_lock}
+2> c(code_lock_tests).
+{ok,code_lock_tests}
+3> eunit:test(code_lock_tests).
+  All 4 tests passed.
+ok
+4> code_lock:start_link([1,2,3,4], 0).
+{ok,<0.117.0>}
+
